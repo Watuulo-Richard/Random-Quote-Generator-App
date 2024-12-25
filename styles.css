@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #450a0a;
+  min-height: 100vh;
+  padding: 10rem 0rem;
+  color: #fef9c3;
+  font-family: "Noto Sans", serif;
+  font-size: 1.6rem;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0rem 1rem;
+}
+@media (max-width: 1024px) {
+  body {
+    padding: 20rem 0rem;
+  }
+}
+.rectangle-frame {
+  width: 35%;
+  min-height: 30vh;
+  background: #581c87;
+  box-shadow: #581c87 0px 5px 15px;
+}
+@media (max-width: 1024px) {
+  .rectangle-frame {
+    width: 100%;
+    min-height: 30vh;
+    background: #581c87;
+    box-shadow: #581c87 0px 5px 15px;
+  }
+}
+@media (max-width: 495px) {
+  .rectangle-frame {
+    width: 100%;
+    min-height: 30vh;
+    background: #581c87;
+    box-shadow: #581c87 0px 5px 15px;
+  }
+}
+
+.square-frame {
+  width: 30%;
+  min-height: 60vh;
+  background: #d97706;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 15px #d97706;
+  padding: 1rem;
+  text-align: center;
+}
+.square-frame p {
+  line-height: 2;
+}
+.square-frame h3 {
+  padding: 1rem 0rem;
+}
+.square-frame .quote-image {
+  margin: 1rem auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: #fef9c3 solid 5px;
+  overflow: hidden;
+}
+.square-frame .quote-image img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.square-frame .getQuoteBtn {
+  border: none;
+  padding: 1rem 6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: #fef9c3;
+  color: #d97706;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1024px) {
+  .square-frame {
+    width: 90%;
+    min-height: 60vh;
+    background: #d97706;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px #d97706;
+    padding: 14rem 1rem;
+    text-align: center;
+  }
+  .square-frame p {
+    line-height: 2;
+  }
+  .square-frame h3 {
+    padding: 1rem 0rem;
+  }
+  .square-frame .quote-image {
+    margin: 1rem auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: #fef9c3 solid 5px;
+    overflow: hidden;
+  }
+  .square-frame .quote-image img {
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .square-frame .getQuoteBtn {
+    border: none;
+    padding: 1rem 6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background: #fef9c3;
+    color: #d97706;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+}
+@media (max-width: 768px) {
+  .square-frame {
+    width: 80%;
+    min-height: 60vh;
+    background: #d97706;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px #d97706;
+    padding: 1rem;
+    text-align: center;
+  }
+  .square-frame p {
+    line-height: 2;
+  }
+  .square-frame h3 {
+    padding: 1rem 0rem;
+  }
+  .square-frame .quote-image {
+    margin: 1rem auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: #fef9c3 solid 5px;
+    overflow: hidden;
+  }
+  .square-frame .quote-image img {
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .square-frame .getQuoteBtn {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background: #fef9c3;
+    color: #d97706;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+  .square-frame .getQuoteBtn:hover {
+    transform: scale(1) translateY(-0.5px);
+  }
+}/*# sourceMappingURL=styles.css.map */
